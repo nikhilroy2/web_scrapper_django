@@ -1,0 +1,23 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+<main>
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-12">
+                <h3>
+                    HTML TAG SCRAPPING
+                </h3>
+
+
+
+                {% for news in news_list %}
+                <h3> {{ news }} </h3>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}
